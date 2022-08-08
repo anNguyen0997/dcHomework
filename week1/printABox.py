@@ -6,14 +6,16 @@ widthIn = int(input('Enter a WIDTH : '))
 heightIn = int(input('Enter a HEIGHT : '))
 
 def num(widthIn, heightIn):
-    # print('*' * widthIn)
-    for i in range(1, widthIn + 1):
-        for x in range(1, heightIn + 1):
-            if (i == 1 or i == widthIn or x == 1 or x == heightIn):
 
-                print('*', end = '')
+    for row in range(1, widthIn + 1):
+        for col in range(1, heightIn + 1):
+
+            if (row == 1 or row == widthIn):
+                print('*', end = ' ')
+            elif (col == 1 or col == heightIn):
+                print('*', end = ' ')    
             else:
-                print(' ', end ='')
+                print(' ', end =' ')
         print()
 
 num(widthIn, heightIn)
