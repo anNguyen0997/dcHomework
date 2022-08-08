@@ -3,27 +3,23 @@
 
 student1 = {
     "id": "478923",
-    "name": "Wes Fountain",
+    "name": "Wes",
 }
-
 student2 = {
     "id": "578490",
-    "name": "Jorge Rodriguez",
+    "name": "Jorge",
 }
-
 student3 = {
     "id": "453789",
-    "name": "Khanh Trinh",
+    "name": "Khanh",
 }
-
 student4 = {
     "id": "945890",
     "name": "Jonathan",
 }
-
 student5 = {
     "id": "578909",
-    "name": "Fiona Eckert",
+    "name": "Fiona",
 }
 
 dcList = [student1, student2, student3, student4, student5]
