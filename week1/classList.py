@@ -36,6 +36,4 @@ def listSort(oldList: list) -> list:
             topNumber = idNum
         
 
-   
-
 print(listSort(dcList))
