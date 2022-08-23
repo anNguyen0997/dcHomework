@@ -86,7 +86,6 @@ function splitAmount(bill, serviceLevel, numOfPeople) {
         let split = total / numOfPeople
         console.log(`Bill: ${bill} | service: ${serviceLevel} | Amount after split: ${split}`)
     }
-
 }
 
 console.log(tipAmount(200, 'good'))
@@ -97,12 +96,22 @@ console.log(splitAmount(200, 'good', 4))
         // write a function printNumbers which is given a start number and an end number
         // it will print the numbers from one to the other, one per line
 
+// function printNumbers(startNum, endNum) {           // for loop 
+//     for (let i = startNum; i < endNum + 1; i++)
+//         console.log(i)
+// } 
+
 function printNumbers(startNum, endNum) {
-    for (let i = startNum; i < endNum + 1; i++)
+    let i = startNum;
+    while(i < endNum + 1) {
         console.log(i)
-} 
+        i++
+    }
+}
 printNumbers(4, 19)
 
+// -----------------------------------------------------------------------------------------------
+    
 
 
 
