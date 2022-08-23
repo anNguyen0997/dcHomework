@@ -96,10 +96,10 @@ console.log(splitAmount(200, 'good', 4))
         // write a function printNumbers which is given a start number and an end number
         // it will print the numbers from one to the other, one per line
 
-// function printNumbers(startNum, endNum) {           // for loop 
-//     for (let i = startNum; i < endNum + 1; i++)
-//         console.log(i)
-// } 
+function printNumbers(startNum, endNum) {           // for loop 
+    for (let i = startNum; i < endNum + 1; i++)
+        console.log(i)
+} 
 
 function printNumbers(startNum, endNum) {
     let i = startNum;
@@ -111,7 +111,7 @@ function printNumbers(startNum, endNum) {
 printNumbers(4, 19)
 
 // -----------------------------------------------------------------------------------------------
-    
+
 
 
 
