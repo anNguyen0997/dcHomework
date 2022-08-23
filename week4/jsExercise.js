@@ -9,8 +9,8 @@ function sayHello(name) {
     console.log(`Hello, ${name}`);
     }
 }
-// // sayHello()
-// sayHello('An')
+sayHello()
+sayHello('An')
 
 // -------------------------------------------------------------------------------------------------
     // Madlib
@@ -21,7 +21,7 @@ function favSubject(name, subj) {
     let newString = `${name}'s favorite subject in school is ${subj}`;
     return newString;
 }
-// console.log(favSubject('Donny', 'science'))
+console.log(favSubject('Donny', 'science'))
 
 // -------------------------------------------------------------------------------------------------
     // Tip Calculator 
@@ -41,15 +41,31 @@ function tipAmount(bill, serviceLevel) {
         return bill * .10
     }
 }
-        // Part 2
+        // part 2
             // write a function totalAmount that takes the same arguments as tipAmount
             // except it returns the total as the tip amount plus the bill amount
 
-// function totalAmount(bill, serviceLevel) {
-//     function tipAmount(bill, serviceLevel) {
-//         return bill
-//     }
-// }
+function totalAmount(bill, serviceLevel) {
+    if (serviceLevel == 'good') {
+        let goodTip = bill * .20
+        let total = bill + goodTip
+        console.log(`Bill: ${bill} | service: ${serviceLevel} | Total Bill: ${total}`)
+
+    } else if (serviceLevel == 'fair') {
+        let fairTip = bill * .15
+        let total = bill + fairTip
+        console.log(`Bill: ${bill} | service: ${serviceLevel} | Total Bill: ${total}`)
+
+    } else if (serviceLevel == 'poor') {
+        let poorTip = bill * .15
+        let total = bill + poorTip
+        console.log(`Bill: ${bill} | service: ${serviceLevel} | Total Bill: ${total}`)
+    }
+}
+        // part 3
+            // write a function splitAmount that takes the bill, the level of service, 
+            // and the number of people to split the bill between.
+            // return the final amount for each person
 
 function splitAmount(bill, serviceLevel, numOfPeople) {
     if (serviceLevel == 'good') {
@@ -74,7 +90,7 @@ function splitAmount(bill, serviceLevel, numOfPeople) {
 }
 
 console.log(tipAmount(200, 'good'))
-// console.log(totalAmount(200, 'good'))
+console.log(totalAmount(200, 'good'))
 console.log(splitAmount(200, 'good', 4))
 // ---------------------------------------------------------------------------------------------
 
