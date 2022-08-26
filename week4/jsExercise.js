@@ -111,9 +111,24 @@ function printNumbers(startNum, endNum) {
 printNumbers(4, 19)
 
 // -----------------------------------------------------------------------------------------------
+    // Just the positives
+        // write a function positiveNumbers which is given an array of numbers and 
+        // returns a new array containing only the positive numbers within the given array
 
-
-
-
+    numberArray = [-3, -1, -5, 9, 5, 3]
+    let positiveNumbers = (numArray) => {
+        for (let i = 0; i < numArray.length; i++) {
+            currentNum = numArray[i]
+            console.log(currentNum)
+            newArray = []
+            if (currentNum > 0) {
+                newArray.update(currentNum);
+                return newArray;
+            } else {
+                return numberArray;
+            }
+         }
+    }
+    console.log(positiveNumbers(numberArray))
 
     
